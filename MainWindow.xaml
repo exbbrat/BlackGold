@@ -5,9 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlackGold"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="975">
     <Grid>
-<!--//поле для для вибору регіону ( Дніпропетровський, Донецький)-->
+        <ComboBox x:Name="C0" HorizontalAlignment="Left" Height="46" Margin="10,43,0,0" VerticalAlignment="Top" Width="235">
+            <ComboBoxItem>Житомирська</ComboBoxItem>
+            <ComboBoxItem>Київська</ComboBoxItem>
+            <ComboBoxItem>Білгородська</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="C1" HorizontalAlignment="Left" Height="46" Margin="10,180,0,0" VerticalAlignment="Top" Width="235">
+            <ComboBoxItem>Тонкошарувата</ComboBoxItem>
+            <ComboBoxItem>Середньошарувата</ComboBoxItem>
+            <ComboBoxItem>Крупношарувата</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="C2" HorizontalAlignment="Left" Height="46" Margin="250,180,0,0" VerticalAlignment="Top" Width="236">
+            <ComboBoxItem>підвищені механічні властивості</ComboBoxItem>
+            <ComboBoxItem>понижені механічні властивості</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="C3" HorizontalAlignment="Left" Height="46" Margin="491,180,0,0" VerticalAlignment="Top" Width="235">
+            <ComboBoxItem>Імпорт у</ComboBoxItem>
+            <ComboBoxItem>Експорт із</ComboBoxItem>
+        </ComboBox>
+        <ComboBox x:Name="C4" HorizontalAlignment="Left" Height="46" Margin="731,180,0,0" VerticalAlignment="Top" Width="235">
+            <ComboBoxItem>3-5</ComboBoxItem>
+            <ComboBoxItem>12-15</ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="B1" Content="Button" HorizontalAlignment="Center" Height="43" Margin="0,486,0,0" VerticalAlignment="Top" Width="236"/>
+        <Label Content="Region" HorizontalAlignment="Left" Height="28" Margin="10,10,0,0" VerticalAlignment="Top" Width="235"/>
+        <Label Content="Тип структури " HorizontalAlignment="Left" Height="28" Margin="10,147,0,0" VerticalAlignment="Top" Width="235"/>
+        <Label Content="Властивості " HorizontalAlignment="Left" Height="28" Margin="251,147,0,0" VerticalAlignment="Top" Width="235"/>
+        <Label Content="Експорт імпорт File.txt " HorizontalAlignment="Left" Height="28" Margin="491,147,0,0" VerticalAlignment="Top" Width="235"/>
+        <Label Content="Висота розміщення пісковика " HorizontalAlignment="Left" Height="28" Margin="731,147,0,0" VerticalAlignment="Top" Width="235" FontSize="16"/>
+        <ListView x:Name="LV1" HorizontalAlignment="Center" Height="217" Margin="0,231,0,0" VerticalAlignment="Top" Width="955" d:ItemsSource="{d:SampleData ItemCount=5}">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <!--//поле для для вибору регіону ( Дніпропетровський, Донецький)-->
         <!--// 4 поля для для вибору властивостей ( 
         a.0 підвищенні механічні 
         а.1 понижені механічні властивості
@@ -15,7 +50,10 @@
         b. Тип структури 
         b.0 struct_1
         b.1 struct_2
-        
+        2 combobox  ( тонко і середньошарувата структура  і кропно- і середнто шарувата структура )
+        3 combobox ( підвищені механічні властивості понижені механічні властивості ) 
+        КОли повернешся залиш тут комент)
+        тут я 
         )-->
 
     </Grid>
